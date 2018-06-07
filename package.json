@@ -1,0 +1,15 @@
+{
+  "name": "yue-web-basic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Yue.",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^2.5.3",
+    "yue-asyncall": "0.0.1",
+    "yue-helper": "0.0.8",
+    "yue-web-app-core": "0.0.2",
+    "yue-ws-core": "0.0.1"
+  }
+}
