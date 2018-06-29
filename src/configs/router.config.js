@@ -16,4 +16,10 @@ routers.push({path: '/sendMessage', method: 'post', controller: ServiceControlle
 routers.push({path: '/broadcast', method: 'post', controller: ServiceController, func: 'broadcast'});
 
 
+/**
+ * 检测用户是否在线
+ */
+routers.push({path: '/checkUserIsOnline/:userId', method: 'put', controller: ServiceController, func: 'checkUserIsOnline'});
+
+
 module.exports=routers;

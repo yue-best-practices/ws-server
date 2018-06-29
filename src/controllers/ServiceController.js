@@ -87,4 +87,29 @@ module.exports=class ServiceController extends BaseController {
         await next();
     }
 
+
+    /**
+     * 检测用户是否在线
+     * @param ctx
+     * @param next
+     * @returns {Promise.<void>}
+     */
+    async checkUserIsOnline(ctx,next){
+        let userId=ctx.params.userId;
+
+        console.log('====userId',userId);
+
+        let result=ClientsMap.has(userId);
+        ctx.result={
+            code:200,
+            message:"OK",
+            data:{
+                result
+            }
+        };
+
+        await next();
+
+    }
+
 };
