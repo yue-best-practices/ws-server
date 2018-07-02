@@ -6,10 +6,14 @@
   "author": "Yue.",
   "license": "ISC",
   "dependencies": {
+    "google-protobuf": "^3.6.0",
+    "grpc": "^1.12.4",
     "log4js": "^2.5.3",
     "yue-asyncall": "0.0.1",
     "yue-helper": "0.0.8",
-    "yue-web-app-core": "0.0.2",
     "yue-ws-core": "0.0.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.6.6"
   }
 }
