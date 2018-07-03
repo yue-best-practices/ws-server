@@ -2,7 +2,7 @@
  * Created by yuanjianxin on 2018/7/2.
  */
 const grpc = require('grpc');
-const services = require('./resources/WebSocketServer_grpc_pb');
+const services = require('grpc-ws-server-pb').WebSocketServer_grpc_pb;
 const server = new grpc.Server();
 const methods = require('./methods');
 const appConf = require('../src/configs/app.config');

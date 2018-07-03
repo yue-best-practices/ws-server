@@ -1,7 +1,7 @@
 /**
  * Created by yuanjianxin on 2018/7/2.
  */
-const messages = require('./resources/WebSocketServer_pb');
+const messages = require('grpc-ws-server-pb').WebSocketServer_pb;
 const AsyncAll = require('yue-asyncall');
 const wsCore = require('yue-ws-core');
 const isJSON = (content) => {

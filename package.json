@@ -8,12 +8,10 @@
   "dependencies": {
     "google-protobuf": "^3.6.0",
     "grpc": "^1.12.4",
+    "grpc-ws-server-pb": "0.0.1",
     "log4js": "^2.5.3",
     "yue-asyncall": "0.0.1",
     "yue-helper": "0.0.8",
     "yue-ws-core": "0.0.1"
-  },
-  "devDependencies": {
-    "grpc-tools": "^1.6.6"
   }
 }
