@@ -26,6 +26,8 @@ const sendMsg = async(call, callback) => {
     userId = isJSON(userId) && JSON.parse(userId) || [userId];
     message = isJSON(message) && JSON.parse(message) || [message];
 
+    userId = userId.map(v => v.toString());
+
     let clients = [];
     userId.forEach(v => {
         ClientsMap.has(v) && clients.push(...ClientsMap.get(v));
@@ -42,7 +44,7 @@ const sendMsg = async(call, callback) => {
     let promiseList = [];
     promiseObj.forEach(v => {
         promiseList.push((async(v) => {
-            await v.ws.send(v.data);
+            await v.ws.send(JSON.stringify(v.data));
         })(v));
     });
 
